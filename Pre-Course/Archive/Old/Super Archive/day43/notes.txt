@@ -1,0 +1,5 @@
+There are n flights provided as an array of flight names.
+
+We have a list of flight bookings. The i-th booking bookings[i] = [i, j, k] means that we booked k seats from flight at index i to flight at index j inclusive.
+
+Return an array answer of length n, where each item is an array containing flight name and the number of seats booked on that flight. The order of flights in answer should be the same as the order in the given array.

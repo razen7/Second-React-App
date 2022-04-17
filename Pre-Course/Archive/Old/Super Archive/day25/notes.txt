@@ -1,0 +1,15 @@
+Input:
+matrix = [[100, -350, -200],
+          [-100, -300, 700]]
+
+Output: 400
+Explanation: 
+Path followed is 100 -> -100 -> -300 -> 700
+
+Input:
+matrix = [[500, 100, 230],
+           [1000, 300, 100],
+           [200, 1000, 200]]
+Output: 3000
+Explanation:
+Path followed is 500 -> 1000 -> 300 -> 1000 -> 200

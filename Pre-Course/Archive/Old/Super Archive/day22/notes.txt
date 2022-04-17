@@ -1,0 +1,5 @@
+base case
+if(arrIdx===0) return arr [ arrIdx ]
+
+recursive case
+else return findSum(arrIdx-1)+ arr [ arrIdx ]

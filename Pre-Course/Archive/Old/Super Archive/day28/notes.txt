@@ -1,0 +1,12 @@
+let arr = [a, b, c]
+// Then power set of `arr` will be
+[ 
+  [],
+  [a],
+  [b],
+  [c],
+  [a, b],
+  [a, c],
+  [b, c],
+  [a, b, c] 
+]

@@ -1,0 +1,8 @@
+Input:
+    10
+    / \
+  20   19
+  /
+ 19
+ 
+Output: false(as left of node with value 10 is greater than 10.)

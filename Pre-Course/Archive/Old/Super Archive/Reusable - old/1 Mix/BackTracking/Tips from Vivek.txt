@@ -1,0 +1,27 @@
+1. Print all possible output.
+
+void findSolutions(n, other params) :
+    if (found a solution) : // now this can be in anyway either the input become empty/reached target sum
+        print solution
+        return
+
+    for (all choices) :
+        if (isValidChoice(val, n)) : // so that we don't chose something which will definitely not yield a result.
+            applyValue(val, n); //chose the current one
+            findSolutions(n+1, other params); //explore all other possible combination with current chosen one.
+            removeValue(val, n); // remove current chosen and go for next.
+
+2. Finding whether a solution exists or not 
+
+boolean findSolutions(n, other params) :
+    if (found a solution) :
+        displaySolution();
+        return true;
+
+    for (all choices) :
+        if (isValidChoice(val, n)) :
+            applyValue(val, n);
+            if (findSolutions(n+1, other params)) // before going and exploring other choices for the current level, make sure previous calls didn't bring the result.
+                return true;
+            removeValue(val, n);
+        return false;

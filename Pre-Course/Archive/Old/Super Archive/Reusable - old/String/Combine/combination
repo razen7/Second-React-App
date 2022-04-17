@@ -1,0 +1,42 @@
+// https://github.com/McLaren-College/day-33-morning-challenge-ds-algo-3_1-razen7
+
+function getCombinations(str) {
+    let keyMap = {
+        0: '',
+        1: '',
+        2: 'abc',
+        3: 'def',
+        4: 'ghi',
+        5: 'jkl',
+        6: 'mno',
+        7: 'pqrs',
+        8: 'tuv',
+        9: 'wxyz',
+    }
+    if (str.length === 0) return "No results for empty input";
+    else if (str.length === 1) return keyMap[str[0]].split('');
+
+    let i = 0;
+    let arr1 = keyMap[str[i++]].split('');
+    let arr2 = keyMap[str[i++]].split('')
+    let rArr = getCombinationsHelper(arr1, arr2);
+    while (i < str.length) {
+        arr1 = rArr;
+        arr2 = keyMap[str[i++]].split('');
+        rArr = getCombinationsHelper(arr1, arr2);
+    }
+    return rArr;
+}
+
+function getCombinationsHelper(arr1, arr2, rArr = []) {
+    for (let c1 = 0; c1 < arr1.length; c1++) {
+        const ch1 = arr1[c1];
+        // Gather
+        for (let c2 = 0; c2 < arr2.length; c2++) {
+            const ch2 = arr2[c2];
+            let picked = ch1 + ch2;
+            rArr.push(picked);
+        }
+    }
+    return rArr;
+}

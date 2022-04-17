@@ -1,0 +1,1 @@
+.4 I(listA) { .6 mergedLL.push(listA.value) 7 listA = listA.next 8 } 9 0 while (listB) { 1 mergedLL.push(listB.value) 2 listB = listB.next 3 5 return mergedLL 6 7 

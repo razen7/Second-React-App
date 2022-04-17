@@ -1,0 +1,17 @@
+Given a word write a program to print all the permutation of the given word.
+
+
+
+
+For input string: A
+
+output:
+A
+
+For input string: AB
+
+output:
+AB BA
+function permute(word) {
+    // write your code here
+}

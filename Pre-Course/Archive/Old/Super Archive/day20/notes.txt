@@ -1,0 +1,7 @@
+  head: <ref *1> {
+    data: 14,
+    prev: undefined,
+    next: { data: 5, prev: [Circular *1], next: [Object] }
+  },
+  size: 4
+}
